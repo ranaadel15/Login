@@ -1,0 +1,56 @@
+<html>
+     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css"/> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+     </head>
+     <body>
+        <div class="container" id="signUp" style="display: none;">
+            <h1 class="form-tittle">Smart <br>Login <br>System</h1>
+            <form id="signUpForm">
+              <div class="input-group">
+                <input type="text" id="signUpName" required>
+                <label for="signUpName">Enter your name</label>
+              </div>
+              <div class="input-group">
+                <input type="email" id="signUpEmail" required>
+                <label for="signUpEmail">Enter your email</label>
+              </div>
+              <div class="input-group">
+                <input type="password" id="signUpPassword" required>
+                <label for="signUpPassword">Enter Password</label>
+              </div>
+              <input type="submit" class="btn" value="Sign Up">
+              <div class="sign-link">
+                <p>Already have an account?<br><a href="#" id="signInButton">Sign In</a></p>
+              </div>
+            </form>
+          </div>
+          
+          <div class="container" id="signIn" style="display: block;">
+            <h1 class="form-tittle">Smart <br>Login <br>System</h1>
+            <form id="signInForm">
+              <div class="input-group">
+                <input type="email" id="signInEmail" required>
+                <label for="signInEmail">Enter your email</label>
+              </div>
+              <div class="input-group">
+                <input type="password" id="signInPassword" required>
+                <label for="signInPassword">Enter your Password</label>
+              </div>
+              <input type="submit" class="btn" value="Login">
+              <div class="sign-link">
+                <p>Don't have an account? <br> <a href="#" id="signUpButton">Sign Up</a></p>
+              </div>
+            </form>
+          </div>
+          
+          <h1 class="h"  id="welcomeMessage" style="display: none;">Welcome,ro!</h1>
+
+        <script src="index.js"></script>
+     </body> 
+</html>
